@@ -6,3 +6,29 @@
 body{
     font-family: "Montserrat", sans-serif;
 }
+
+header img{
+    height: 27px;
+    margin-bottom: 0.5rem;
+}
+
+header h1{
+    color:white;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:gray;
+}
+
+.flex-column{
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    max-width: 20%;
+}
+
