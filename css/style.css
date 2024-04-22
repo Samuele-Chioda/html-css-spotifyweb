@@ -25,10 +25,46 @@ a{
     color:gray;
 }
 
+.big-div{
+    display: flex;
+}
+
 .flex-column{
     display: flex;
-    background-color: black;
+    background-color: #000000;
     flex-direction: column;
     max-width: 20%;
 }
 
+section.upgrade{
+    padding: 1.5rem;
+    background: #080b12;
+}
+
+.nav-bar-artist ul{
+    display: flex;
+    flex: row;
+}
+
+section.artisti{
+    display: flex;
+}
+
+.artisti-album img{
+    max-width: 100%;
+    padding: 0.5rem;
+}
+
+.artisti-album-per-john{
+    display: flex;
+
+}
+
+.main-container{
+    background-color: #141922;
+    color: white;
+}
+
+.realase-radar{
+    max-width: 20%;
+}
