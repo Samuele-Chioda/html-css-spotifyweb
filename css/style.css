@@ -9,11 +9,15 @@ body{
 
 header img{
     height: 27px;
-    margin-bottom: 0.5rem;
 }
 
-header h1{
+header h3 , h1{
     color:white;
+    padding-bottom: 0.5rem;
+}
+
+header ul , li{
+    margin-bottom: 1rem;
 }
 
 ul{
@@ -30,15 +34,22 @@ main p , h1{
     padding-bottom: 1rem;
 }
 
+.logo-spotify{
+    margin-bottom: 2rem;
+}
+
 .big-div{
     display: flex;
 }
+
 
 .flex-column{
     display: flex;
     background-color: #000000;
     flex-direction: column;
-    max-width: 20%;
+    max-width: 30%;
+    font-size: 0.7rem;
+    padding: 0.5rem;
 }
 
 section.upgrade{
@@ -51,7 +62,7 @@ section.upgrade{
 .upgrade button{
     background-color: black;
     color: white;
-    border-radius: 10%;
+    border-radius: 25%;
     border: 1px solid white;
     padding: 0.5rem;
     font-size: 0.8rem;
@@ -59,8 +70,6 @@ section.upgrade{
 }
 
 .nav-bar-artist ul{
-    display: flex;
-    flex: row;
     display: flex;
     justify-content: center;
     font-size: 12px;
@@ -80,7 +89,7 @@ section.artisti{
 
 .artisti-album{
     max-width: calc(100% / 6);
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
     font-size: 10px;
 }
@@ -111,12 +120,20 @@ main p{
 
 .realase-radar img{
     max-width: 100%;
-    padding: 0.5rem;
 }
 
 .border-radious{
     border-radius: 50%;
 }
 
-.viewport{
+.footer{
+    background-color: #282828;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.album-piccolo{
+    width: 5px;
+    display: block;
 }
