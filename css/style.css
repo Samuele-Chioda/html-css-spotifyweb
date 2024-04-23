@@ -52,6 +52,8 @@ main p h1 h2{
 
 .big-div{
     display: flex;
+    height: calc(100vh - 90px);
+    overflow: hidden;
 }
 
 .fa-square-plus{
@@ -170,8 +172,8 @@ a:hover{
 }
 
 div.viewport{
-    height:calc(100vh + 90px);
-    overflow-y:auto;
+    height: 100vh;
+    overflow: auto;
 }
 
 section.artisti{
