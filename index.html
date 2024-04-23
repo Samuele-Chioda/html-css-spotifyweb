@@ -46,15 +46,17 @@
                 <section class="playlist">
                     <h3><strong>PLAYLIST</strong></h3>
                     <a class="" href=""><i class="fa-solid fa-square-plus"></i> Crea Playlist</a>
-                    <ul>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                    </ul>
+                    <div class="playlist-nav">
+                        <ul>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                        </ul>
+                    </div>
                 </section>
             </div>
             <section class="account">
@@ -80,8 +82,7 @@
                 <section class="nav-bar-artist">
                     <ul>
                         <li><a href="">IN EVIDENZA</a></li>
-                        <li><a href="">PODCAST<ENZA /a>
-                        </li>
+                        <li><a href="">PODCAST</a></li>
                         <li><a href="">CLASSIFICHE</a></li>
                         <li><a href="">GENERI E MOOD</a></li>
                         <li><a href="">NUOVE USCITE</a></li>
@@ -89,7 +90,7 @@
                     </ul>
                 </section>
 
-                <section>
+                <section class="padding-left">
                     <h1>Recently played</h1>
                 </section>
                 <!-- da qui comincia la sezione con gli album e gli artisti in evidenza -->
@@ -128,14 +129,14 @@
                     </section>
                     <!-- seconda parte della sezione artisti, artisti per John -->
                     <section class="artisti-per-john">
-                        <h1>
+                        <h2 class="padding-left">
                             Creato per John Doe
-                        </h1>
-                        <p>
+                        </h2>
+                        <p class="padding-left">
                             Più ascolti, più accurati saranno i suggerimenti.
                         </p>
                     </section>
-    
+
                     <section class="artisti-album-per-john">
                         <div class="artisti-album realase-radar">
                             <img src="./img/radar.jpeg" alt="">
@@ -152,14 +153,14 @@
                     </section>
                     <!-- sezione finale -->
                     <section class="artisti-più-popolari">
-                        <h1>
+                        <h1 class="padding-left">
                             Artisti più popolari
                         </h1>
-                        <p>
+                        <p class="padding-left">
                             Più ascolti, più accurati saranno i suggerimenti.
                         </p>
                     </section>
-    
+
                     <section class="artisti-album-per-john">
                         <div class="artisti-album realase-radar final">
                             <img class="border-radious" src="./img/youg.jpeg" alt="">
@@ -179,19 +180,47 @@
         </main>
     </div>
 
-        <footer>
-            <div class="footer">
-                <div class="album-piccolo">
-                    <img src="./img/favicon.ico" alt="">
+    <footer>
+        <div class="listening">
+            <div class="block left">
+                <div class="block img-small">
+                    <img class="song-cover" src="./img/sinister.jpeg" alt="sinister photo">
                 </div>
-                <p>
-                    <strong>Sinister</strong><br>
-                    Brano Nome
-                </p>
-
+                <div class="song-name">
+                    <h1 class="cl-white">Sinister</h1>
+                    <p class="cl-gray">Brano nome</p>
+                </div>
+                <div class="">
+                    <div class="song-name"><i class="fa-regular fa-heart"></i></div>
+                    <div class="song-name"><i class="fa-regular fa-folder"></i></div>
+                </div>
             </div>
-
-        </footer>
+            <div class="block center lateral">
+                <div class="block-center">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="">
+                    <a href="">0.25</a>
+                    <input class="player-slider" type="range" min="1" max="100" value="50">
+                    <a href="">4.35</a>
+                </div>
+            </div>
+            <div class="block center right">
+                <div class="block-center">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="">
+                    <input class="player-slider" type="range" min="1" max="100" value="50">
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

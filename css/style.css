@@ -16,7 +16,7 @@ header h3 , h1{
     padding-bottom: 0.5rem;
 }
 
-header ul , li{
+header ul li{
     margin-bottom: 1rem;
 }
 
@@ -29,9 +29,15 @@ a{
     color:gray;
 }
 
-main p , h1{
+main p h1 h2{
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.padding-left{
     padding-left: 1rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .logo-spotify{
@@ -81,6 +87,13 @@ section.upgrade{
     margin-right: 1rem;
 }
 
+.nav-bar-artist ul > li:hover{
+    border-bottom:1px solid #6b9629;
+}
+
+.playlist-nav ul > li:hover{
+    background-color: 1px solid #6b9629;
+}
 
 section.artisti{
     display: flex;
@@ -89,7 +102,7 @@ section.artisti{
 
 .artisti-album{
     max-width: calc(100% / 6);
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: center;
     font-size: 10px;
 }
@@ -115,7 +128,7 @@ main p{
 
 .realase-radar{
     max-width: calc(100% / 6);
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .realase-radar img{
@@ -125,7 +138,7 @@ main p{
 .border-radious{
     border-radius: 50%;
 }
-
+ /* da qui comincia il css del footer */
 .footer{
     background-color: #282828;
     color: white;
@@ -136,4 +149,79 @@ main p{
 .album-piccolo{
     width: 5px;
     display: block;
+}
+
+.listening{
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    display:flex;
+    color: white;
+    background-color:#282828 ;
+    justify-content: space-between;   
+}
+
+.listening{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block{
+    display:flex;
+    width: 33%;
+    padding: 0.5rem;
+}
+
+.block-center{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.cl-gray{
+    color: gray;
+}
+
+.song-cover{
+    max-width: 100%;
+}
+.song-name{
+    font-size: 0.5rem;
+}
+
+.right{
+    display: flex;
+    justify-content: end;
+    padding: 3rem;
+
+}
+
+.lateral{
+    display: block;
+    text-align: center;
+}
+
+.lateral i{
+    padding: 0.5rem;
+}
+
+.block-center i{
+    padding: 0.5rem;
+}
+
+.fa-circle-play{
+    font-size: 2rem;
+}
+
+.img-small{
+    height: 4rem;
 }
