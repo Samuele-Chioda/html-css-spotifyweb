@@ -76,7 +76,6 @@ main p h1 h2{
 }
 
 .account{
-    position: absolute;
     bottom: 0;
     width: 80%;
 }
@@ -173,7 +172,6 @@ a:hover{
 
 div.viewport{
     height: 100vh;
-    overflow: auto;
 }
 
 section.artisti{
@@ -205,6 +203,8 @@ main p{
 .main-container{
     background-color: #141922;
     color: white;
+    height: calc(100vh - 70px);
+    overflow: scroll;
 }
 
 .realase-radar{
@@ -340,3 +340,27 @@ footer{
 ul li:hover{
     color: white;
 }
+
+@media screen and (max-width: 992px){
+    .artisti-album{
+        max-width: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .artisti-album{
+        max-width: calc(100% / 2);    
+    }
+    .nav-bar-artist ul{
+    }
+    .nav-bar-artist ul li{
+    }
+}
+
+@media screen and (max-width: 576px){
+    .artisti-album{
+        max-width: calc(85% / 2);    
+    }   
+}
+
+
