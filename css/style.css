@@ -117,17 +117,19 @@ main p h1 h2{
     display: flex;
     background-color: #000000;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 250px;
     font-size: 0.7rem;
     padding: 1rem;
-    position: relative;
 }
 
 section.upgrade{
     padding: 1.5rem;
     background: #080b12;
+    opacity: 0.9;
     display: flex;
     justify-content: end;
+    width: 85%;
+    position: fixed;
 }
 
 .upgrade button{
@@ -139,12 +141,17 @@ section.upgrade{
     font-weight: bold;
 }
 
+.nav-bar-artist{
+    padding-top: 5rem;
+}
+
 .nav-bar-artist ul{
     display: flex;
     justify-content: center;
     font-size: 12px;
     font-weight: bold;
     padding: 1rem;
+    flex-wrap:wrap;
 }
 
 .nav-bar-artist ul > li{
@@ -343,7 +350,17 @@ ul li:hover{
 
 @media screen and (max-width: 992px){
     .artisti-album{
-        max-width: calc(100% / 4);
+        max-width: calc(100% / 4);   
+    }
+    .nav-bar-artist ul li{
+        width: calc(100% / 6);
+        margin-bottom: 2rem;
+    }
+    .nav-bar-artist ul{
+        text-align: center;
+    }
+    .padding-left{
+        padding-top: 0;
     }
 }
 
@@ -351,10 +368,14 @@ ul li:hover{
     .artisti-album{
         max-width: calc(100% / 2);    
     }
-    .nav-bar-artist ul{
-    }
+    
     .nav-bar-artist ul li{
+        width: calc(100% / 4);
     }
+
+    .upgrade{
+    }
+
 }
 
 @media screen and (max-width: 576px){
