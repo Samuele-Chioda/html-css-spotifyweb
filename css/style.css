@@ -78,6 +78,7 @@ main p h1 h2{
 .account{
     bottom: 0;
     width: 80%;
+    position: absolute;
 }
 
 .installa-app{
@@ -120,6 +121,7 @@ main p h1 h2{
     max-width: 250px;
     font-size: 0.7rem;
     padding: 1rem;
+    position: relative;
 }
 
 section.upgrade{
@@ -128,7 +130,7 @@ section.upgrade{
     opacity: 0.9;
     display: flex;
     justify-content: end;
-    width: 85%;
+    width: calc(100% - 150px);
     position: fixed;
 }
 
@@ -159,9 +161,9 @@ section.upgrade{
 }
 
 .nav-bar-artist ul > li:hover{
-    border-bottom: 1px solid #adff2f;
+    border-bottom: 1px solid #adff2f ;
     color: white;
-    transform: scale(1.1)
+    transform: scale(1.1);    
 }
 
 a{
@@ -348,6 +350,12 @@ ul li:hover{
     color: white;
 }
 
+@media screen and (min-width: 1200px){
+    .upgrade{
+        margin-right: 1.5rem;     
+    }
+}
+
 @media screen and (max-width: 992px){
     .artisti-album{
         max-width: calc(100% / 4);   
@@ -361,6 +369,10 @@ ul li:hover{
     }
     .padding-left{
         padding-top: 0;
+    }
+    
+    .listening{
+        font-size: 0.7rem;
     }
 }
 
@@ -376,12 +388,19 @@ ul li:hover{
     .upgrade{
     }
 
+    .listening{
+        font-size: 0.6rem;
+    }
+
 }
 
 @media screen and (max-width: 576px){
     .artisti-album{
-        max-width: calc(85% / 2);    
+        max-width: calc(100% / 2);    
     }   
+    .flex-column{
+        width: 15px;
+    }
 }
 
 
