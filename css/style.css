@@ -7,9 +7,11 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
-header{
-    width: 320px;
+.main-container{
+    width:calc(100%-200px);
 }
+
+
 
 header img{
     height: 27px;
@@ -75,12 +77,6 @@ main p h1 h2{
     align-content:center;
 }
 
-.account{
-    bottom: 0;
-    width: 80%;
-    position: absolute;
-}
-
 .installa-app{
     display: flex;
 }
@@ -118,10 +114,11 @@ main p h1 h2{
     display: flex;
     background-color: #000000;
     flex-direction: column;
-    max-width: 250px;
+    width: 250px;
     font-size: 0.7rem;
-    padding: 1rem;
-    position: relative;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 section.upgrade{
@@ -349,10 +346,20 @@ footer{
 ul li:hover{
     color: white;
 }
-
+/* da qui cominciano le media query */
 @media screen and (min-width: 1200px){
     .upgrade{
         margin-right: 1.5rem;     
+    }
+
+    .logo-spotify-small{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .logo-spotify-small{
+        display: none;
     }
 }
 
@@ -360,19 +367,26 @@ ul li:hover{
     .artisti-album{
         max-width: calc(100% / 4);   
     }
+
     .nav-bar-artist ul li{
         width: calc(100% / 6);
         margin-bottom: 2rem;
     }
+
     .nav-bar-artist ul{
         text-align: center;
     }
+
     .padding-left{
         padding-top: 0;
     }
     
     .listening{
         font-size: 0.7rem;
+    }
+
+    .logo-spotify-small{
+        display: none;
     }
 }
 
@@ -385,11 +399,12 @@ ul li:hover{
         width: calc(100% / 4);
     }
 
-    .upgrade{
-    }
-
     .listening{
         font-size: 0.6rem;
+    }
+
+    .logo-spotify-small{
+        display: none;
     }
 
 }
@@ -398,9 +413,55 @@ ul li:hover{
     .artisti-album{
         max-width: calc(100% / 2);    
     }   
+
     .flex-column{
-        width: 15px;
+        width: 40px;
     }
+
+    .playlist{
+        display: none;
+    }
+
+    .search li span{
+        display: none;
+    }
+
+    .search li:hover{
+        border-right:none;
+    }
+
+    .search li img:hover{
+        border-bottom: 1px solid #adff2f ;
+    }
+
+    .account a span{
+        display:none;
+    }
+
+    .account hr{
+        display:none;
+    }
+
+     /* con questa regola decidi quale immagine e quando farla visualizzare! */
+    .logo-spotify{
+        display: none;
+    }
+
+    .logo-spotify-small{
+        margin-bottom:1rem;
+        display: block;
+    }
+
+    .user-container img
+
+    .installa-app img{
+        height: 2rem;
+        }
+
+    section.upgrade{
+        width: calc(100% - 40px);
+    }   
 }
+
 
 
