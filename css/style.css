@@ -65,6 +65,7 @@ main p h1 h2{
 
 .display-flex{
     display: flex;
+    justify-content:center;
 }
 
 .crea-playlist{
@@ -164,7 +165,7 @@ section.upgrade{
 }
 
 a{
-    transition: transform 0.1s ease;
+    transform: scale(1.1);
 }
 
 a:hover{
@@ -172,8 +173,13 @@ a:hover{
     transform: scale(1.1);
 }
 
+.upgrade button:hover{
+    transform: scale(1.1);
+}
+
 .search li:hover{
     border-right: 1px solid #adff2f ;
+    transform: scale(1.1);
 }
 
 div.viewport{
@@ -346,6 +352,11 @@ footer{
 ul li:hover{
     color: white;
 }
+
+.artisti-album img:hover{
+
+}
+
 /* da qui cominciano le media query */
 @media screen and (min-width: 1200px){
     .upgrade{
@@ -355,11 +366,17 @@ ul li:hover{
     .logo-spotify-small{
         display: none;
     }
+    .player-slider{
+        width:100%;
+    }
 }
 
 @media screen and (max-width: 1200px){
     .logo-spotify-small{
         display: none;
+    }
+    .player-slider{
+        width:100%;
     }
 }
 
@@ -388,6 +405,9 @@ ul li:hover{
     .logo-spotify-small{
         display: none;
     }
+    .player-slider{
+        width:100%;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -405,6 +425,9 @@ ul li:hover{
 
     .logo-spotify-small{
         display: none;
+    }
+    .player-slider{
+        width:100%;
     }
 
 }
@@ -452,15 +475,52 @@ ul li:hover{
         display: block;
     }
 
-    .user-container img
-
-    .installa-app img{
-        height: 2rem;
-        }
+    .installa-app{
+        justify-content: center;
+    }
 
     section.upgrade{
         width: calc(100% - 40px);
-    }   
+    }
+    
+    /* da qui footer */
+    .song-cover{
+        padding: 1rem;
+    }
+    .song-name-description{
+        padding-left:0;
+        font-size: 0.4rem;
+        margin-right:1rem;
+    }
+    .song-name{
+        padding:0;
+    }
+    .div-song-name{
+        flex-direction: column;
+    }
+    .player-slider{
+        width:80px;
+        padding:0.5rem;
+    }
+    .block-center a{
+        padding:0.3rem;
+        font-size: 1rem;
+    }
+    .right{
+        align-items: center;;
+    }
+    .fa-regular.fa-circle-play{
+        font-size: 2rem;
+    }
+    .block-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-bar-artist ul li{
+        width: calc(100% / 5);
+        margin-bottom: 0;
+    }
 }
 
 
